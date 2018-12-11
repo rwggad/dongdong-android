@@ -13,10 +13,7 @@ import com.example.rwgga.dongdong.database_table.userTable;
 
 /**
  *
- * 작성자 : Created by (김정환)
- *
- * 마지막 수정 날짜 : 2018. 11. 22
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  * 클럽 생성 액티비티 - 1
  */
 public class createClubKindActivity extends AppCompatActivity implements View.OnClickListener {

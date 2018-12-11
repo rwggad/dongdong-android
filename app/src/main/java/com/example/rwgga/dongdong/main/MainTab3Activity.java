@@ -33,10 +33,7 @@ import java.util.ArrayList;
 import java.util.List;
 /**
  *
- * 작성자 : Created by (김정환)
- *
- * 마지막 수정 날짜 : 2018. 11. 25
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  *
  * 개설된 동아리 목록
  */

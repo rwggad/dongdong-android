@@ -28,10 +28,7 @@ import java.util.HashMap;
 
 /**
  *
- * 작성자 : Created by (김정환)
- *
- * 마지막 수정 날짜 : 2018. 11. 22
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  * 클럽 생성 액티비티 - 2
  */
 public class createClubActivity extends AppCompatActivity {

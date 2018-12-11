@@ -35,10 +35,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 /**
  *
- * 작성자 : Created by (손민성)
- *
- * 마지막 수정 날짜 : 2018. 11. 25~
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  * 동아리 가입한 유저
  */
 public class moreClubUsersActivity extends AppCompatActivity {

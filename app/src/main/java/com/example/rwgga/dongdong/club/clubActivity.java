@@ -37,10 +37,7 @@ import java.util.ArrayList;
 
 /**
  *
- * 작성자 : Created by (손민성)
- *
- * 마지막 수정 날짜 : 2018. 11. 12~
-
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  * 사용자가 특정 동아리를 선택해서 들어와지는 동아리 메인 페이지이다.
  *
  * Recycler로 현재 동아리에 개설된 게시물들을 들고오고 a

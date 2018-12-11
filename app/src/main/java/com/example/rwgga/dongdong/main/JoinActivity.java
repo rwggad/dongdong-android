@@ -20,10 +20,7 @@ import com.example.rwgga.dongdong.php_server.insertData;
 
 /**
  *
- * 작성자 : Created by (김정환)
- *
- * 마지막 수정 날짜 : 2018. 11. 03
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  *
  * 사용자 등록 엑티비티
  */

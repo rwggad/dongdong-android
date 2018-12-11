@@ -40,10 +40,7 @@ import java.util.ArrayList;
 
 /**
  *
- * 작성자 : Created by (김정환, 이현원)
- *
- * 마지막 수정 날짜 : 2018. 11. 26
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  * 게시물 목록 출력
  */
 public class boardTable_RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {

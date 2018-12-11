@@ -14,10 +14,7 @@ import java.util.List;
 
 /**
  *
- * 작성자 : Created by (이현원)
- *
- * 마지막 수정 날짜 : 2018. 11. 15
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  * 분류에 맞는 동아리 가져오기
  */
 public class kind_Spinner_Adapter extends BaseAdapter {

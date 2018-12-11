@@ -27,10 +27,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 /**
  *
- * 작성자 : Created by (김정환)
- *
- * 마지막 수정 날짜 : 2018. 11. 22
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  * 클럽 가입 액티비티
  */
 public class clubJoinActivity extends AppCompatActivity implements View.OnClickListener{

@@ -24,10 +24,7 @@ import java.util.ArrayList;
 
 /**
  *
- * 작성자 : Created by (이현원)
- *
- * 마지막 수정 날짜 : 2018. 11. 24
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  *
  * 더보기 페이지 - 탈퇴
  */

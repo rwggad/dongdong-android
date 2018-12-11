@@ -17,8 +17,7 @@ import java.util.GregorianCalendar;
 
 /**
  *
- * 작성자 : Created by (손민성)
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  * 마지막 수정 날짜 : 2018. 11. 24~
  *
  * 캘린더 팝업

@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  *
- * 작성자 : Created by (강준구)
- *
- * 마지막 수정 날짜 : 2018. 11. 22~
- *
- * 더보기 사용자 모아보기
  */
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

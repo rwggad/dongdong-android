@@ -37,10 +37,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * 작성자 : Created by (김정환)
- *
- * 마지막 수정 날짜 : 2018. 11. 10~
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  * 게시물을 자세히 보는 activity 이다.
  *
  * boardTable_RecyclerAdapter 에서 layout 선택시 현재 엔티비티가 실행

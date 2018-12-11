@@ -35,10 +35,7 @@ import java.util.ArrayList;
 
 /**
  *
- * 작성자 : Created by (김정환, 이현원)
- *
- * 마지막 수정 날짜 : 2018. 11. 26
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  * 특정 게시물 자세한 내용과 댓글 리스트 불러오기
  */
 public class commentTable_RecyclerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {

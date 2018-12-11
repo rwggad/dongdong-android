@@ -29,10 +29,7 @@ import org.json.JSONObject;
 
 /**
  *
- * 작성자 : Created by (김정환)
- *
- * 마지막 수정 날짜 : 2018. 11. 12
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  *
  * 메인 엑티비티이다. 탭뷰어로 이루어져있으며,
  *

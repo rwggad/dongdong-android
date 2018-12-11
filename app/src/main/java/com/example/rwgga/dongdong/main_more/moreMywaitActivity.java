@@ -40,10 +40,7 @@ import java.util.List;
 
 /**
  *
- * 작성자 : Created by (이현원)
- *
- * 마지막 수정 날짜 : 2018. 11. 24
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  *
  * 내가 신청한 가입 현황
  */

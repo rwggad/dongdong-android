@@ -28,10 +28,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 /**
- * 작성자 : Created by (김정환)
- *
- * 마지막 수정 날짜 : 2018. 11. 10~
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  * 게시물 작성, 또는 수정하는 엑티비티
  *
  * intent할때 move 값으로 Detail이 나오면 boardTable_RecyclerAdapter 수정버튼을 눌러서 들어온것

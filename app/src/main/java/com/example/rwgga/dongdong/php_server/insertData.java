@@ -13,10 +13,7 @@ import java.net.URL;
 
 /**
  *
- * 작성자 : Created by (서진성)
- *
- * 마지막 수정 날짜 : 2018. 11. 02
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  *
  * php 서버로 db 데이터 넣기
  */

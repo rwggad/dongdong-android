@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /**
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  *
- * 작성자 : Created by (강준구)
- *
- * 마지막 수정 날짜 : 2018. 11. 02~
- *
- * 게시물 자세히 보기
  */
 -->
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"

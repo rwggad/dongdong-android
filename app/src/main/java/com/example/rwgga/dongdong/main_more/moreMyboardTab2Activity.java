@@ -37,10 +37,7 @@ import java.util.ArrayList;
 
 /**
  *
- * 작성자 : Created by (손민성)
- *
- * 마지막 수정 날짜 : 2018. 11. 24
- *
+ * 작성자 : Created by (rwggad@gmail.com - 김정환(KimJeongHwan)
  *
  * 더보기 페이지 내가 쓴 글 - 댓글 목록
  */

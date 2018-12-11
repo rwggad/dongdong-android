@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ *
+ * 작성자 : Created by (강준구)
+ *
+ * 마지막 수정 날짜 : 2018. 10. 29~
+ *
+ * 동아리 분류 드롭다운
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/kind_spinnerImage"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+
+    <TextView
+        android:id="@+id/kind_spinnerText"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:alpha="0.87"
+        android:paddingLeft="13dp"
+        android:textColorHint="#1f000000"
+        android:gravity="left"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:shadowColor="#6b6b6b"
+        android:shadowRadius="5.0"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0" />
+
+    <ImageView
+        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+        android:scaleType="centerInside"
+        android:layout_width="20dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

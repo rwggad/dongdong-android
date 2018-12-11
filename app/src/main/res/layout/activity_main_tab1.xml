@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ *
+ * 작성자 : Created by (강준구)
+ *
+ * 마지막 수정 날짜 : 2018. 10. 29 ~
+ *
+ * 메인 탭 1
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <!-- 내동아리 분류 탭 -->
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cacaca"
+                />
+            <TextView
+                android:id="@+id/tab1_layout_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="내 동아리"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:shadowColor="#6b6b6b"
+                android:shadowRadius="5.0"
+                android:shadowDx="3.0"
+                android:shadowDy="3.0"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#cacaca"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/refresh"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/tab1_layout_rev"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <!-- 가입된 동아리가 없다면 -->
+            <TextView
+                android:id="@+id/tab1_layout_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:text=""
+                android:textSize="20dp"
+                android:textColor="#969696"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 만들기 탭 -->
+    <LinearLayout
+        android:layout_weight="3.1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+            <LinearLayout
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/tab1_layout_createClub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@drawable/ic_add_circle_black_24dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="동아리 만들기"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="18dp"
+                        android:shadowColor="#6b6b6b"
+                        android:shadowRadius="5.0"
+                        android:shadowDx="3.0"
+                        android:shadowDy="3.0"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+    <!-- 동아리 추천 탭 -->
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cacaca"
+                />
+            <TextView
+                android:id="@+id/tab1_layout_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이런 동아리는 어때욤?"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:shadowColor="#6b6b6b"
+                android:shadowRadius="5.0"
+                android:shadowDx="3.0"
+                android:shadowDy="3.0"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="#cacaca"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

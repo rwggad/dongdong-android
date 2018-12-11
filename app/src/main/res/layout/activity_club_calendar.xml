@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+/**
+ *
+ * 작성자 : Created by (강준구)
+ *
+ * 마지막 수정 날짜 : 2018. 11. 10 ~
+ *
+ * 클럽 캘린더 메인
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".club.clubCalendarActivity"
+    android:weightSum="10"
+    >
+    <!-- 달력 -->
+    <LinearLayout
+        android:background="@drawable/border"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:background="@color/background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weekSeparatorLineColor="#0d6eb8"
+                app:mcv_selectionColor="#000000"
+                app:mcv_showOtherDates="defaults" />
+        </ScrollView>
+    </LinearLayout>
+    <!-- 달력 프리뷰 -->
+    <LinearLayout
+        android:background="@color/background"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- recycler -->
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/refresh"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cal_rev"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <!-- 게시물이 없다면 -->
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:id="@+id/cal_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/texthint"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

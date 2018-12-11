@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ *
+ * 작성자 : Created by (김정환)
+ *
+ * 마지막 수정 날짜 : 2018. 10. 15 ~
+ *
+ * 로그인
+ */
+-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".main.MainActivity">
+    <!-- 로고 -->
+    <ImageView
+        android:id="@+id/layout_login_logo_image"
+        android:layout_width="195dp"
+        android:layout_height="195dp"
+        android:src="@drawable/logo"
+        android:backgroundTint="#ffffff"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/layout_login_Title"
+        />
+
+    <!-- TITLE -->
+    <LinearLayout
+        android:id="@+id/layout_login_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/layout_login_logo_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/layout_login_input"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="동아대학교"
+            android:textColor="#ffffff"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:shadowColor="#6b6b6b"
+            android:shadowRadius="5.0"
+            android:shadowDx="5.0"
+            android:shadowDy="5.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_login_logo_image" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="동아리"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:shadowColor="#6b6b6b"
+            android:shadowRadius="5.0"
+            android:shadowDx="5.0"
+            android:shadowDy="5.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_login_logo_image" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DONG-A UNIVERSITY"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:shadowColor="#6b6b6b"
+            android:shadowRadius="5.0"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_login_logo_image" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLUB"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:shadowColor="#6b6b6b"
+            android:shadowRadius="5.0"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_login_logo_image" />
+    </LinearLayout>
+
+    <!-- INPUT -->
+    <LinearLayout
+        android:id="@+id/layout_login_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/layout_login_Title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/layout_login_Enter"
+        >
+        <EditText
+            android:id="@+id/login_layout_student_number_edit"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="학번 입력"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            />
+        <EditText
+            android:id="@+id/login_layout_student_password_edit"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="비밀번호 입력"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+
+    <!-- ENTER -->
+    <android.support.constraint.ConstraintLayout
+        android:background="#ffffff"
+        android:id="@+id/layout_login_Enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/layout_login_input"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <LinearLayout
+            android:id="@+id/layout_login_Enter_Btn"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:background="#ffffff"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="로그인"
+                android:textColor="@color/skyblue"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:shadowColor="#e2e2e2"
+                android:shadowRadius="5.0"
+                android:shadowDx="3.0"
+                android:shadowDy="3.0"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/skyblue" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/login_layout_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</android.support.constraint.ConstraintLayout>

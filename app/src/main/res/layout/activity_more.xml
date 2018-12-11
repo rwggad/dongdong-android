@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ *
+ * 작성자 : Created by (강준구)
+ *
+ * 마지막 수정 날짜 : 2018. 11. 22~
+ *
+ * 메인 - 더보기
+ */
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- 상단 내정보 보기 -->
+            <LinearLayout
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <!-- 사용자 정보 -->
+                <LinearLayout
+                    android:id="@+id/more_layout_btn0"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <!-- 사용자 사진 -->
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/ic_account_circle_black_24dp" />
+                    <!-- 사용자 이름 -->
+                    <TextView
+                        android:id="@+id/more_layout_Name_Number"
+                        android:text="이름(학번)"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="#6b6b6b"
+                        android:shadowRadius="5.0"
+                        android:shadowDx="2.0"
+                        android:shadowDy="2.0" />
+                    <!-- 동아리 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="동아리 : "
+                            android:textColor="#000000"
+                            android:textSize="12dp"
+                            android:shadowColor="#6b6b6b"
+                            android:shadowRadius="5.0"
+                            android:shadowDx="2.0"
+                            android:shadowDy="2.0"/>
+
+                        <TextView
+                            android:id="@+id/more_layout_clubCnt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="0"
+                            android:textColor="#000000"
+                            android:textSize="12dp"
+                            android:shadowColor="#6b6b6b"
+                            android:shadowRadius="5.0"
+                            android:shadowDx="2.0"
+                            android:shadowDy="2.0"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 구분선 -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#cacaca"
+                    />
+            </LinearLayout>
+
+            <!-- 하단 더보기 버튼 -->
+            <LinearLayout
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <!-- 구분선 -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#00cacaca"
+                    />
+                <!-- 공지사항 -->
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/more_layout_btn1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- 사진 -->
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/mbtn1" />
+                    <!-- 내용 -->
+                    <TextView
+                        android:shadowColor="#6b6b6b"
+                        android:shadowRadius="5.0"
+                        android:shadowDx="2.0"
+                        android:shadowDy="2.0"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="공지사항"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!-- 어플 정보 -->
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/more_layout_btn2"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- 사진 -->
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/mbtn2" />
+                    <!-- 내용 -->
+                    <TextView
+                        android:shadowColor="#6b6b6b"
+                        android:shadowRadius="5.0"
+                        android:shadowDx="2.0"
+                        android:shadowDy="2.0"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="어플리케이션 정보"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!-- 구분선 -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="#cacaca"
+                    />
+                <!-- 동아리 신청내역 -->
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/more_layout_btn3"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- 사진 -->
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/mbtn3" />
+                    <!-- 내용 -->
+                    <TextView
+                        android:shadowColor="#6b6b6b"
+                        android:shadowRadius="5.0"
+                        android:shadowDx="2.0"
+                        android:shadowDy="2.0"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="나의 신청 내역"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!-- 내가 쓴 글 -->
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/more_layout_btn4"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- 사진 -->
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/mbtn4" />
+                    <!-- 내용 -->
+                    <TextView
+                        android:shadowColor="#6b6b6b"
+                        android:shadowRadius="5.0"
+                        android:shadowDx="2.0"
+                        android:shadowDy="2.0"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="내가 쓴 글"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!-- 구분선 -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="#cacaca"
+                    />
+                <!-- 로그아웃 -->
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/more_layout_btn5"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- 사진 -->
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/mbtn5" />
+                    <!-- 내용 -->
+                    <TextView
+                        android:shadowColor="#6b6b6b"
+                        android:shadowRadius="5.0"
+                        android:shadowDx="2.0"
+                        android:shadowDy="2.0"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="로그아웃"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!--  서비스 탈퇴 -->
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/more_layout_btn6"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!-- 사진 -->
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/mbtn6" />
+                    <!-- 내용 -->
+                    <TextView
+                        android:shadowColor="#6b6b6b"
+                        android:shadowRadius="5.0"
+                        android:shadowDx="2.0"
+                        android:shadowDy="2.0"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="서비스 탈퇴"
+                        android:textColor="#f5635b"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!-- 구분선 -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#00cacaca"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

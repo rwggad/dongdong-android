@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ *
+ * 작성자 : Created by (강준구)
+ *
+ * 마지막 수정 날짜 : 2018. 11. 22~
+ *
+ * 더보기 내가 작성한 게시물탭2
+ */
+-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/more_tab2_layout_rev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <!-- 작성된 댓글이 없다면 -->
+        <TextView
+            android:id="@+id/more_tab2_layout_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="#969696"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

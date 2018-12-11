@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#008577</color>-->
+
+    <color name="colorPrimary">#107dac</color>
+    <color name="colorPrimaryDark">#005073</color>
+    <color name="colorAccent">#459ab6</color>
+    <color name="skyblue">#50BCDF</color>
+    <color name="Cherry_blossoms">#F3E2E0</color>
+    <color name="babyPink">#EDC0BA</color>
+    <color name="black">#000000</color>
+    <color name="texthint">#bcbcbc</color>
+    <color name="background">#ededed</color>
+</resources>

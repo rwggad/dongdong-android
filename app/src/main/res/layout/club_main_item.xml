@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ *
+ * 작성자 : Created by (강준구)
+ *
+ * 마지막 수정 날짜 : 2018. 11. 10~
+ *
+ * 동아리 메인 아이템
+ */
+-->
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/club_main_item_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="visible"
+    android:background="@color/background"
+    >
+    <!-- 게시물이 없다면 -->
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/club_main_item_parent"
+        android:id="@+id/club_main_item_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="등록된 게시물이 없습니다."
+        android:textColor="#969696"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/club_main_item_parent"
+        android:background="@drawable/border"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- 동아리 간략한 정보 -->
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+            <!-- 동아리 이름 -->
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/club_main_item_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="동아리 이름"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:shadowColor="#6b6b6b"
+                android:shadowRadius="5.0"
+                android:shadowDx="2.0"
+                android:shadowDy="2.0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/club_main_item_userLay"/>
+            <!-- 멤버 수 -->
+            <LinearLayout
+                android:id="@+id/club_main_item_userLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintTop_toBottomOf="@+id/club_main_item_Title"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/ic_person_black_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=": "
+                    android:textColor="#000000"
+                    android:textSize="10dp"
+                    />
+                <TextView
+                    android:id="@+id/club_main_item_userCnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="10dp"
+                    android:shadowColor="#6b6b6b"
+                    android:shadowRadius="5.0"
+                    android:shadowDx="2.0"
+                    android:shadowDy="2.0"
+                    />
+
+            </LinearLayout>
+            <!-- 글쓰기 버튼 -->
+            <LinearLayout
+                android:background="@drawable/round_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginRight="20dp">
+                <LinearLayout
+                    android:background="?android:attr/selectableItemBackground"
+                    android:id="@+id/club_main_item_writeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="글쓰기"
+                        android:textColor="#000000"
+                        android:textSize="13dp"
+                        android:shadowColor="#6b6b6b"
+                        android:shadowRadius="5.0"
+                        android:shadowDx="2.0"
+                        android:shadowDy="2.0"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

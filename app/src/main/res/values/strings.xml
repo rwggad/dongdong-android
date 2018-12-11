@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DongDong</string>
+    <string name="title_activity_main2">MainActivity</string>
+
+    <string name="main_tab_text_1">메인</string>
+    <string name="main_tab_text_2">홍보 게시판</string>
+    <string name="main_tab_text_3">동아리 찾기</string>
+
+    <string name="more_tab_title">내가 쓴 글</string>
+    <string name="more_tab_text_1">게시글</string>
+    <string name="more_tab_text_2">댓글</string>
+    <string name="action_settings">더 보기</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="out_dialog_content"> 탈퇴를 하시게되면..\n\n\n - 운영중인 동아리가 있을 경우 탈퇴를 하실 수 없습니다.\n\n - 참여중인 모든 동아리에서 자동으로 탈퇴됩니다.\n\n - 동아리에서 작성한 게시물들은 수정 및 삭제를 할 수 없으니 탈퇴전에 지우거나 수정하시기 바랍니다.
+</string>
+</resources>

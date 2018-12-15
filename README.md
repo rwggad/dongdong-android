@@ -1,4 +1,4 @@
-# DongDong-Project
+# DongDong-Project(Android)
    - 제작자 :
       - 안드로이드, Java, dataBase : 김정환 - rwggad@gmail.com  
       - php : 서진성

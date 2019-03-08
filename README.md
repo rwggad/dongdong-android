@@ -1,7 +1,6 @@
-# DongDong-Project(Android)
+# dongdong-android
    - 제작자 :
       - 안드로이드, Java, dataBase : 김정환 - rwggad@gmail.com  
-      - php : 서진성
       
    - 작업기간 : 2018 10 ~ 2018 12
    - 작업 툴 : android Studio, Intellij
